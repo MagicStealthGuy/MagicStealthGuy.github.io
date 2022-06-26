@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Zuki Relationship Slider</title>
+  <link rel="stylesheet/less" type="text/css" href="style.less">
+  <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="code.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="updateSlider">
+
+  <header>
+    <h1> Zuki Vikuli's Relationship Guide</h1>
+
+  </header>
+
+  <p><strong>0 Hearts:</strong> Zuki wants you <strong><em>dead</em></strong>. He doesn’t wish death on most ponies, so you must’ve actively pissed him off to reach this point. <br>
+    <strong>1 Heart:</strong> Zuki hates you and will not be shy about letting you know. He will actively avoid or be aggressive with you at nearly every turn. <br>
+    <strong>2 Hearts:</strong> Zuki dislikes you. He will actively ignore you, act condescending, and object to your thoughts. <br>
+    <strong>3 Hearts:</strong> Zuki has a general disdain for you. He will be condescending towards you and not take you seriously. <br>
+    <strong>4 Hearts:</strong> Zuki is slightly bothered by your behavior. He is more likely to sass you or criticize your actions. <br>
+    <strong>5 Hearts:</strong> Neutral. Zuki will be more than polite with you as he is with everypony. He does not dislike you. <br>
+    <strong>6 Hearts:</strong> Zuki considers you a friend. He will confide in you his personal feelings in good faith. <br>
+    <strong>7 Hearts:</strong> Zuki really likes you. He will pray for your well being, trust your words, and participate in most activities involving you. <br>
+    <strong>8 Hearts:</strong> Best Friends. At this point Zuki trusts you enough to be emotionally vulnerable with you. He willingly lets his guard down around you and accepts comfort instead of giving it. <br>
+    <strong>9 Hearts:</strong> Zuki considers you his second family. He has an active and vested interest in your life and safety, and will actively fight tooth and hoof to protect you. <br>
+    <strong>10 Hearts:</strong> Zuki will <strong><em>die</em></strong> for you. Your life in his eyes is as important as his mother’s life, his homeland, his princess. He shows a love and care for you so genuine that it could move mountains.
+    </p>
+
+  <div class="character">
+
+    <table>
+      <tr>
+        <td>
+            <h2>Moonlily</h2>
+            <p>The happy pegasus with the shimmering mane</p>
+            <input class="slider" value="5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Moon.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <h2>Glaze Shield</h2>
+            <p>Our chef in shining armor</p>
+            <input class="slider" value="4.5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>-0.5 When confronted about persuading the boar druid.</li>
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Glaze.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <h2>Nightcrawler</h2>
+            <p>The speedy detective</p>
+            <input class="slider" value="5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Night.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <h2>Zephyrus</h2>
+            <p>A quite nervous fellow</p>
+            <input class="slider" value="5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Zephyrus.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <h2>Starry Skies</h2>
+            <p>A very secretive shimmering unicorn</p>
+            <input class="slider" value="5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Starry.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <h2>Oceanfish</h2>
+            <p>A filly with a strange aura and even stranger equipment</p>
+            <input class="slider" value="5.5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>+0.5 When Zuki grew concerned over their telepathic scream.</li>
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Ocean.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <h2>Graphite Marks</h2>
+            <p>I do not think I've ever seen him emote</p>
+            <input class="slider" value="5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Graphite.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <h2>Tidal Wave</h2>
+            <p>A nervous stallion with no memories and a charming little seal</p>
+            <input class="slider" value="6" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>+1.0 When Zuki offered to teach Tidal Wave his druidic knowledge.</li>
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Tidal.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <h2>Azure</h2>
+            <p>Very large and very fluffy</p>
+            <input class="slider" value="7" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>+1.0 When she kept Zuki company by the Luna statue</li>
+              <li>+1.0 When Azure performed an inspiring speech of intimidation against the dragons.</li>
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Azure.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <h2>Blue Spruce</h2>
+            <p>I think she is just a drunk Azure carried along</p>
+            <input class="slider" value="5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Blue.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <h2>Hypna</h2>
+            <p>A musical mare with an affitnity for swords</p>
+            <input class="slider" value="5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Clinch.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <h2>Infatua</h2>
+            <p>This one is just a pervert.</p>
+            <input class="slider" value="5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>-0.5 When she was harassing the batpony shopkeeper</li>
+              <li>+0.5 When she and Zuki bantered during the dragon fight</li>               
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Infa.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <h2>Coda Canterbile</h2>
+            <p>A fellow native from south Equis with a beautiful singing voice</p>
+            <input class="slider" value="6.5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>+1.0 Upon learning that she was a stranger to Equestria like Zuki, and from the south as well!</li>
+              <li>+0.5 During the train ride when Zuki coached her in her exercise and gave her tea.</li>                            
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Coda.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <h2>Clinch Coffers</h2>
+            <p>A very reasonable druid</p>
+            <input class="slider" value="5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Clinch.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <h2>Warden Coinshine</h2>
+            <p>A griffin who is very knowledgeable about dragons</p>
+            <input class="slider" value="5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Warden.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+    </table>
+
+
+
+
+
+  </div>
+
+</body>
+
+</html>
