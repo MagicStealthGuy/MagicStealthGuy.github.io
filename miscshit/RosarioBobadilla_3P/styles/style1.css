@@ -1,0 +1,54 @@
+* {box-sizing: border-box;} 
+
+@font-face {
+   font-family: Averia;
+   src:url(../content/fonts/averiafont.ttf) format("truetype");
+   font-weight:normal; }
+@font-face{
+   font-family: Avatar;
+   src:url(../content/fonts/avatarfont.ttf) format("truetype");
+   }
+body {font-family:Averia;
+background-image:url('../content/parchment.png');}
+
+/* header style */
+.header {
+  background-color: #C9FEFF;
+  padding: 0px;
+  text-align: center;
+  font-size: 50px;
+  font-family:Avatar;
+  font-weight:bold;
+}
+
+/* create three equal columns */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+}
+
+/* clear floats */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* footer style */
+.footer {
+  background-color: #e3e9ef;
+  padding: 0px;
+  text-align: center;
+}
+
+/* realigning columns */
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
