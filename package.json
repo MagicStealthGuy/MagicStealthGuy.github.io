@@ -1,0 +1,28 @@
+{
+  "name": "magicstealthguy.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "source": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagicStealthGuy/MagicStealthGuy.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MagicStealthGuy/MagicStealthGuy.github.io/issues"
+  },
+  "homepage": "https://github.com/MagicStealthGuy/MagicStealthGuy.github.io#readme",
+  "dependencies": {
+    "html-to-image": "^1.10.6",
+    "install": "^0.13.0",
+    "npm": "^8.18.0"
+  }
+}
