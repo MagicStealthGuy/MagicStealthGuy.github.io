@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <title>Zuki Relationship Slider</title>
-  <link rel="stylesheet/less" type="text/css" href="style.less">
-  <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-  <script src="code.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://magicstealthguy.github.io/ZukiSite/slider.html">
-  <meta property="og:title" content="Zuki Vikuli Relationship Guide">
-  <meta property="og:description" content="Shorthand Guide to the progress of Zuki's Relationship with the party over the course of the campaign">
-  <meta property="og:image" content="https://linkfork.co/images/poster.png">
-  </head>
-
+  <head>
+    <meta charset="UTF-8">
+    <title>Zuki Relationship Slider</title>
+    <link rel="stylesheet/less" type="text/css" href="style1.less">
+    <script src="https://cdn.jsdelivr.net/npm/less@4"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="code.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://magicstealthguy.github.io/ZukiSite/slider.html">
+    <meta property="og:title" content="Zuki Vikuli Relationship Guide">
+    <meta property="og:description" content="Shorthand Guide to the progress of Zuki's Relationship with the party over the course of the campaign, with movable sliders! (Though they are reset to their initial values upon refresh)">
+    <meta property="og:image" content="https://linkfork.co/images/poster.png">
+    </head>
+<!-- p -->
 <body onload="updateSlider">
 
   <header>
     <h1> Zuki Vikuli's Relationship Guide</h1>
 
   </header>
-<h2>Friendship Levels</h2>
+
+  <h2>Friendship Levels</h2>
   <p><strong>0 Points:</strong> Zuki wants you <strong><em>dead</em></strong>. He doesn’t wish death on most ponies, so you must’ve actively pissed him off to reach this point. <br>
     <strong>1 Point:</strong> Zuki hates you and will not be shy about letting you know. He will actively avoid or be aggressive with you at nearly every turn. <br>
     <strong>2 Points:</strong> Zuki dislikes you. He will actively ignore you, act condescending, and object to your thoughts. <br>
@@ -54,326 +55,334 @@
     <table>
       <tr> <!-- Moonlily -->
         <td>
-          <h2>Moonlily</h2>
-          <p>Despite her coarse past her soul shines like a diamond.</p>
-          <h3 style="text-align:center">Friendship Level</h3>
-          <input class="slider" value="7.3" min="0" max="10" step=".1" name="rangeslider" type="range" disabled/>
-          <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
-          <input class="rslider" value="0" min="0" max="10" step=".1" name="rangeslider" type="range" disabled/>
-          <h3>Relationship Timeline:</h3>
-          <ul style="text-align:left ;">
-            <li>+0.5 Friendship When Zuki had been informed of the tragedy of the Crystal Empire and comforts her.</li>
-            <li>+1.0 Friendship When Zuki comforts Moonlily over her traumatic freakout.</li>
-            <li>+0.5 Friendship When Zuki silently motioned Moonlily to take Oceanfish away from the changeling restaurant.</li>
-            <li>+0.1 Friendship when Moonlily revived him in the Necromancer's Cave.</li>
-            <li>+0.2 Friendship In an attempt to save her life.</li>
-          </ul>
-      </td>
-      <td>
-          <div class="portrait">
-            <img class="avatar" src="assets/characters/Moon.png" />
-            <img class="frame" src="assets/characters/frame.png" />
-          </div>
-      </td>
-    </tr>
-    <tr> <!-- Glaze Shield -->
-      <td>
-          <h2>Glaze Shield</h2>
-          <p>Our chef in shining armor, he has confidence issues.</p>
-          <h3 style="text-align:center">Friendship Level</h3>
-          <input class="slider" value="5.5" min="0" max="10" step=".1" name="rangeslider" type="range" disabled/>
-          <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
-          <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range" disabled/>
-          <h3>Relationship Timeline:</h3>
-          <ul style="text-align:left ;">
-            <li>-0.5 Friendship When confronted about persuading the boar druid.</li>
-            <li>+0.5 Friendship When Zuki and Glaze discussed the situation in Appleloosa and Graphite.</li>
-            <li>+0.5 Friendship When Glaze spared the Necromancer.</li>
-          </ul>
-      </td>
-      <td>
-          <div class="portrait">
-            <img class="avatar" src="assets/characters/Glaze.png" />
-            <img class="frame" src="assets/characters/frame.png" />
-          </div>
-      </td>
-    </tr>
-    <tr> <!-- Nightcrawler -->
-      <td>
-          <h2>Nightcrawler</h2>
-          <p>The speedy detective has made friends with the filly. The spirits of realms beyond seem to trouble him for some odd reason.</p>
-          <h3 style="text-align:center">Friendship Level</h3>
-          <input class="slider" value="5.5" min="0" max="10" step=".1" name="rangeslider" type="range" disabled/>
-          <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
-          <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range" disabled/>
-          <h3>Relationship Timeline:</h3>
-          <ul style="text-align:left ;">
-            <li>+0.5 Friendship When Zuki spoke to Nightcrawler about his fear of spirits in the Necromancer's Cave.</li>
-          </ul>
-      </td>
-      <td>
-          <div class="portrait">
-            <img class="avatar" src="assets/characters/Night.png" />
-            <img class="frame" src="assets/characters/frame.png" />
-          </div>
-      </td>
-    </tr>
-    <tr> <!-- Zephyrus -->
-      <td>
-          <h2>Zephyrus</h2>
-          <p>A quite nervous fellow, but his tenacious passion shines through when it matters most.</p>
-          <h3 style="text-align:center">Friendship Level</h3>
-          <input class="slider" value="7" min="0" max="10" step=".1" name="rangeslider" type="range" disabled/>
-          <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
-          <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range" disabled/>
-          <h3>Relationship Timeline:</h3>
-          <ul style="text-align:left ;">
-            <li>+1.0 Friendship From witnessing Zephyrus save Moonlily's life passionately.</li>
-            <li>+1.0 Friendship When Zephyrus laid down his life in an attempt to stop the Necromancer.</li>
-          </ul>
-      </td>
-      <td>
-          <div class="portrait">
-            <img class="avatar" src="assets/characters/Zephyrus.png" />
-            <img class="frame" src="assets/characters/frame.png" />
-          </div>
-      </td>
-    </tr>
-    <tr> <!-- Starry Skies -->
-      <td>
-          <h2>Starry Skies</h2>
-          <p>A very secretive shimmering unicorn who needs a leash.</p>
-          <h3 style="text-align:center">Friendship Level</h3>
-          <input class="slider" value="4.5" min="0" max="10" step=".1" name="rangeslider" type="range" disabled/>
-          <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
-          <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range" disabled/>
-          <h3>Relationship Timeline:</h3>
-          <ul style="text-align:left ;">
-            <li>-0.5 Friendship From Starry idiotically getting almost killed by going off alone.</li>
-          </ul>
-          
-      </td>
-      <td>
-          <div class="portrait">
-            <img class="avatar" src="assets/characters/Starry.png" />
-            <img class="frame" src="assets/characters/frame.png" />
-          </div>
-      </td>
-    </tr>
-    <tr> <!-- Oceanfish -->
-      <td>
-          <h2>Oceanfish</h2>
-          <p>A filly with a strange aura and even stranger equipment. She seems to be related to changelings somehow...</p><br>
-          <h3 style="text-align:center">Friendship Level</h3>
-          <input class="slider" value="7" min="0" max="10" step=".1" name="rangeslider" type="range" disabled/>
-          <br><h3>Relationship Timeline:</h3><br>
-          <ul style="text-align:left ;">
-            <li>+0.5 Friendship When Zuki grew concerned over their telepathic scream.</li>
-            <li>+0.5 Friendship When Zuki saw their safety threatened within the changeling restaurant.</li>
-            <li>+1.0 Friendship From concern over her near-death in the Necromancer's Cave.</li>
-          </ul>
-      </td>
-      <td>
-          <div class="portrait">
-            <img class="avatar" src="assets/characters/Ocean.png" />
-            <img class="frame" src="assets/characters/frame.png" />
-          </div>
-      </td>
-    </tr>
-    <tr> <!-- Graphite Marks -->
-      <td>
-          <h2>Graphite Marks</h2>
-          <p>I do not think I've ever seen him emote. I still haven't, but there is passion in his heart despite all this.</p>
-          <h3 style="text-align:center">Friendship Level</h3>
-          <input class="slider" value="7.1" min="0" max="10" step=".1" name="rangeslider" type="range" disabled/>
-          <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
-          <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range" disabled/>
-          <h3>Relationship Timeline:</h3>
-          <ul style="text-align:left ;">
-            <li>+1.0 Friendship For Zuki respecting his courage and feeling bad over his situation in Appleloosa.</li>
-            <li>+1.0 Friendship For healing Graphite's wounds in the Necromancer's Cave.</li>
-            <li>+0.1 Friendship For assisting Zuki in battle.</li>
-          </ul>
-      </td>
-      <td>
-          <div class="portrait">
-            <img class="avatar" src="assets/characters/Graphite.png" />
-            <img class="frame" src="assets/characters/frame.png" />
-          </div>
-      </td>
-    </tr>
-    <tr> <!-- Tidal Wave -->
-      <td>
-          <h2>Tidal Wave</h2>
-          <p>A nervous stallion with no memories and a charming little seal.</p>
-          <h3 style="text-align:center">Friendship Level</h3>
-          <input class="slider" value="6" min="0" max="10" step=".1" name="rangeslider" type="range" disabled/>
-          <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
-          <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range" disabled/>
-          <h3>Relationship Timeline:</h3>
-          <ul style="text-align:left ;">
-            <li>+1.0 Friendship When Zuki offered to teach Tidal Wave his druidic knowledge.</li>
-          </ul>
-      </td>
-      <td>
-          <div class="portrait">
-            <img class="avatar" src="assets/characters/Tidal.png" />
-            <img class="frame" src="assets/characters/frame.png" />
-          </div>
-      </td>
-    </tr>
-    <tr> <!-- Azure -->
-      <td> 
-          <h2>Azure</h2>
-          <p>Very large and very fluffy. Her heart is pure and full of joy, and her might is equally as ferocious.</p>
-          <h3 style="text-align:center">Friendship Level</h3>
-          <input class="slider" value="7.8" min="0" max="10" step=".1" name="rangeslider" type="range" disabled/>
-          <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
-          <input class="rslider" value="1" min="0" max="10" step=".1" name="romanceslider" type="range" disabled/>
-          <h3>Relationship Timeline:</h3>
-          <ul style="text-align:left ;">
-            <li>+1.0 Friendship When she kept Zuki company by the Luna statue</li>
-            <li>+1.0 Friendship When Azure performed an inspiring speech of intimidation against the dragons.</li>
-            <li>+0.5 Friendship When Zuki mended Azure's wing.</li>
-            <li style="color:rgb(197, 28, 42)">+1.0 Romance When Zuki had to TEACH AZURE ABOUT SEX TELEPATHICALLY. It was very awkward.</li>
-            <li>+0.1 Friendship When Azure offered to carry him in the Necromancer's Cave.</li>
-            <li>+0.1 Friendship From Azure assisting him in mounted combat.</li>
-            <li>+0.1 Friendship When Azure told Zuki about her sister Revenant.</li>
-          </ul>
-      </td>
-      <td>
-          <div class="portrait">
-            <img class="avatar" src="assets/characters/Azure.png" />
-            <img class="frame" src="assets/characters/frame.png" />
-          </div>
-      </td>
-    </tr>
-    <tr> <!-- Blue Spruce -->
-      <td>
-          <h2>Blue Spruce</h2>
-          <p>She may become a mother soon. Thankfully she has the heart of one.</p>
-          <h3 style="text-align:center">Friendship Level</h3>
-          <input class="slider" value="6.5" min="0" max="10" step=".1" name="rangeslider" type="range" disabled/>
-          <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
-          <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range" disabled/>
-          <h3>Relationship Timeline:</h3>
-          <ul style="text-align:left ;">
-            <li>+0.5 Friendship when Zuki becomes concern over her possible pregnancy.</li>
-            <li>+0.5 Friendship From healing Zuki in the Necromancer's Cave.</li>
-            <li>+0.5 Friendship From witnessing Blue's motherly nature towards the party in the Necromancer's Cave.</li>
-            <li>+0.5 Friendship when Zuki becomes concern over her possible pregnancy.</li>
-            <li>+0.5 Friendship From healing Zuki in the Necromancer's Cave.</li>
-            <li>+0.5 Friendship From witnessing Blue's motherly nature towards the party in the Necromancer's Cave.</li>
-            <li>+0.5 Friendship When they fell asleep together in Appleloosa.</li>
-            <li style="color:rgb(197, 28, 42)">+4.0 Romance When Blue made love to him under the effects of the love potion.</li>
-            <li>+2.0 Friendship When Blue divulged her traumas to him.</li>
-            <li style="color:rgb(185, 57, 132)">+2.0 Romance and +1.0 Friendship After their night in the woods where Zuki made their relationship official.</li>
-          </ul>
-      </td>
-      <td>
-          <div class="portrait">
-            <img class="avatar" src="assets/characters/Blue.png" />
-            <img class="frame" src="assets/characters/frame.png" />
-          </div>
-      </td>
-    </tr>
-    <tr> <!-- Hypna -->
-      <td>
-          <h2>Hypna</h2>
-          <p>A headstrong mare with an affinity for swords</p>
-          <h3 style="text-align:center">Friendship Level</h3>
-          <input class="slider" value="6" min="0" max="10" step=".1" name="rangeslider" type="range" disabled/>
-          <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
-          <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range" disabled/>
-          <h3>Relationship Timeline:</h3>
-          <ul style="text-align:left ;">
-            <li>+1.0 When she revived him in the Necromancer's Cave.</li>
-          </ul>
-      </td>
-      <td>
-          <div class="portrait">
-            <img class="avatar" src="assets/characters/Hypna.png" />
-            <img class="frame" src="assets/characters/frame.png" />
-          </div>
-      </td>
-    </tr>
-    <tr> <!-- Infatua -->
-      <td>
-          <h2>Infatua</h2>
-          <p>This one is just a pervert.</p>
-          <h3 style="text-align:center">Friendship Level</h3>
-          <input class="slider" value="5.5" min="0" max="10" step=".1" name="rangeslider" type="range" disabled/>
-          <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
-          <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range" disabled/>
-          <h3>Relationship Timeline:</h3>
-          <ul style="text-align:left ;">
-            <li>-0.5 Friendship When she was harassing the batpony shopkeeper</li>
-            <li>+0.5 Friendship When she and Zuki bantered during the dragon fight</li>    
-            <li>+0.5 Friendship Because they banter a lot.</li>            
-          </ul>
-      </td>
-      <td>
-          <div class="portrait">
-            <img class="avatar" src="assets/characters/Infa.png" />
-            <img class="frame" src="assets/characters/frame.png" />
-          </div>
-      </td>
-    </tr>
-    <tr> <!-- Coda Cantabile -->
-      <td>
-          <h2>Coda Canterbile</h2>
-          <p>A fellow native from south Equus with a beautiful singing voice.</p>
-          <h3 style="text-align:center">Friendship Level</h3>
-          <input class="slider" value="7.1" min="0" max="10" step=".1" name="rangeslider" type="range" disabled/>
-          <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
-          <input class="rslider" value="1" min="0" max="10" step=".1" name="romanceslider" type="range" disabled/>
-          <h3>Relationship Timeline:</h3>
-          <ul style="text-align:left ;">
-            <li>+1.0 Friendship Upon learning that she was a stranger to Equestria like Zuki, and from the south as well!</li>
-            <li>+0.5 Friendship During the train ride when Zuki coached her in her exercise and gave her tea.</li>  
-            <li style="color:rgb(185, 57, 132)">+0.5 Friendship and +0.5 Romance After bonding over their unruly sisters in Vanhoover.</li>     
-            <li style="color:rgb(185, 57, 132)">+0.1 Friendship and +0.5 Romance After pretending to be a couple whilst undercover in the changeling restaurant.</li>    
-            <li style="color:rgb(185, 57, 132)">+0.1 Friendship and +0.5 Romance When Coda let Zuki live with her in Canterlot.</li>   
-            <li>+0.1 Friendship For showing concern over Zuki's bad day in the Necromancer's Cave.</li>        
-            <li style="color:rgb(185, 57, 132)">-0.2 Friendship and -0.5 Romance After the revelation that she knew the Necromancer's true motive and never sead anything.</li>                     
-          </ul>
-      </td>
-      <td>
-          <div class="portrait">
-            <img class="avatar" src="assets/characters/Coda.png" />
-            <img class="frame" src="assets/characters/frame.png" />
-          </div>
-      </td>
-    </tr>
-    <tr> <!-- Clinch Coffers -->
-      <td>
-          <h2>Clinch Coffers</h2>
-          <p>A very reasonable druid</p>
-          <h3 style="text-align:center">Friendship Level</h3>
-          <input class="slider" value="6" min="0" max="10" step=".1" name="rangeslider" type="range"  disabled/>
-          <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
-          <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range" disabled/>
-          <h3>Relationship Timeline:</h3>
-          <ul style="text-align:left ;">
-            <li>+1.0 Friendship For saving Zephyrus' life.</li>
-          </ul>
-
-      </td>
-      <td>
-          <div class="portrait">
-            <img class="avatar" src="assets/characters/Clinch.png" />
-            <img class="frame" src="assets/characters/frame.png" />
-          </div>
-      </td>
-    </tr>
-    <tr> <!-- Warden Coinshine -->
-      <td>
-          <h2>Warden Coinshine</h2>
-          <p>A griffin who is very knowledgeable about dragons</p>
-          <input class="slider" value="5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
-          <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
-          <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range"/>
-          <h3>Relationship Timeline:</h3>
+            <h2>Moonlily</h2>
+            <p>Despite her coarse past her soul shines like a diamond.</p>
+            <h3 style="text-align:center">Friendship Level</h3>
+            <input class="slider" value="7.3" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
+            <input class="rslider" value="0" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>+0.5 Friendship When Zuki had been informed of the tragedy of the Crystal Empire and comforts her.</li>
+              <li>+1.0 Friendship When Zuki comforts Moonlily over her traumatic freakout.</li>
+              <li>+0.5 Friendship When Zuki silently motioned Moonlily to take Oceanfish away from the changeling restaurant.</li>
+              <li>+0.1 Friendship when Moonlily revived him in the Necromancer's Cave.</li>
+              <li>+0.2 Friendship In an attempt to save her life.</li>
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Moon.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr> <!-- Glaze Shield -->
+        <td>
+            <h2>Glaze Shield</h2>
+            <p>Our chef in shining armor, he has confidence issues.</p>
+            <h3 style="text-align:center">Friendship Level</h3>
+            <input class="slider" value="5.5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
+            <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>-0.5 Friendship When confronted about persuading the boar druid.</li>
+              <li>+0.5 Friendship When Zuki and Glaze discussed the situation in Appleloosa and Graphite.</li>
+              <li>+0.5 Friendship When Glaze spared the Necromancer.</li>
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Glaze.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr> <!-- Nightcrawler -->
+        <td>
+            <h2>Nightcrawler</h2>
+            <p>The speedy detective has made friends with the filly. The spirits of realms beyond seem to trouble him for some odd reason.</p>
+            <h3 style="text-align:center">Friendship Level</h3>
+            <input class="slider" value="6.5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
+            <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>+0.5 Friendship When Zuki spoke to Nightcrawler about his fear of spirits in the Necromancer's Cave.</li>
+              <li>+1.0 Friendship When he trusted Zuki to enter his mind.</li>
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Night.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr> <!-- Zephyrus -->
+        <td>
+            <h2>Zephyrus</h2>
+            <p>A quite nervous fellow, but his tenacious passion shines through when it matters most.</p>
+            <h3 style="text-align:center">Friendship Level</h3>
+            <input class="slider" value="7.1" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
+            <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>+1.0 Friendship From witnessing Zephyrus save Moonlily's life passionately.</li>
+              <li>+1.0 Friendship When Zephyrus laid down his life in an attempt to stop the Necromancer.</li>
+              <li>+0.1 Friendship When helping him hide his embarrassment.</li>
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Zephyrus.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr> <!-- Starry Skies -->
+        <td>
+            <h2>Starry Skies</h2>
+            <p>A very secretive shimmering unicorn who needs a leash.</p>
+            <h3 style="text-align:center">Friendship Level</h3>
+            <input class="slider" value="4.5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
+            <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>-0.5 Friendship From Starry idiotically getting almost killed by going off alone.</li>
+              </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Starry.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr> <!-- Oceanfish -->
+        <td>
+            <h2>Oceanfish</h2>
+            <p>A filly with a strange aura and even stranger equipment. She seems to be related to changelings somehow...</p><br>
+            <h3 style="text-align:center">Friendship Level</h3>
+            <input class="slider" value="7.1" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <br><h3>Relationship Timeline:</h3><br>
+            <ul style="text-align:left ;">
+              <li>+0.5 Friendship When Zuki grew concerned over their telepathic scream.</li>
+              <li>+0.5 Friendship When Zuki saw their safety threatened within the changeling restaurant.</li>
+              <li>+1.0 Friendship From concern over her near-death in the Necromancer's Cave.</li>
+              <li>+0.1 Friendship When he showed concern over her past with changelings.</li>
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Ocean.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr> <!-- Graphite Marks -->
+        <td>
+            <h2>Graphite Marks</h2>
+            <p>I do not think I've ever seen him emote. I still haven't, but there is passion in his heart despite all this.</p>
+            <h3 style="text-align:center">Friendship Level</h3>
+            <input class="slider" value="7.8" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
+            <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>+1.0 Friendship For Zuki respecting his courage and feeling bad over his situation in Appleloosa.</li>
+              <li>+1.0 Friendship For healing Graphite's wounds in the Necromancer's Cave.</li>
+              <li>+0.1 Friendship For assisting Zuki in battle.</li>
+              <li>+0.2 Friendship Over hearing his story (before he forgot)</li>
+              <li>+0.2 Friendship After seeing how much he cares about Blue.</li>
+              <li>+0.3 Friendship When Graphite chose to not only forgive Zuki but place his trust in him to keep Blue safe.</li>
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Graphite.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr> <!-- Tidal Wave -->
+        <td>
+            <h2>Tidal Wave</h2>
+            <p>A nervous stallion with no memories and a charming little seal.</p>
+            <h3 style="text-align:center">Friendship Level</h3>
+            <input class="slider" value="6" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
+            <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>+1.0 Friendship When Zuki offered to teach Tidal Wave his druidic knowledge.</li>
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Tidal.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr> <!-- Azure -->
+        <td>
+            <h2>Azure</h2>
+            <p>Very large and very fluffy. Her heart is pure and full of joy, and her might is equally as ferocious.</p>
+            <h3 style="text-align:center">Friendship Level</h3>
+            <input class="slider" value="8.7" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
+            <input class="rslider" value="1.5" min="0" max="10" step=".1" name="romanceslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>+1.0 Friendship When she kept Zuki company by the Luna statue</li>
+              <li>+1.0 Friendship When Azure performed an inspiring speech of intimidation against the dragons.</li>
+              <li>+0.5 Friendship When Zuki mended Azure's wing.</li>
+              <li style="color:rgb(197, 28, 42)">+1.0 Romance When Zuki had to TEACH AZURE ABOUT SEX TELEPATHICALLY. It was very awkward.</li>
+              <li>+0.1 Friendship When Azure offered to carry him in the Necromancer's Cave.</li>
+              <li>+0.1 Friendship From Azure assisting him in mounted combat.</li>
+              <li>+0.1 Friendship When Azure told Zuki about her sister Revenant.</li>
+              <li>+0.2 Friendship While fighting with Azure against the Necromancers.</li>
+              <li>+0.1 Friendship While she worried for Graphite and Zuki.</li>
+              <li>+0.3 Friendship from their panic attack feedback loop.</li>
+              <li style="color:rgb(185, 57, 132)">+0.3 Friendship and +0.5 Romance After confronting her worry over him that she cannot explain.</li>
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Azure.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr> <!-- Blue Spruce -->
+        <td>
+            <h2>Blue Spruce</h2>
+            <p>She may become a mother soon. Thankfully she has the heart of one.</p>
+            <h3 style="text-align:center">Friendship Level</h3>
+            <input class="slider" value="9.2" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
+            <input class="rslider" value="2.5" min="0" max="10" step=".1" name="romanceslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>+0.5 Friendship when Zuki becomes concern over her possible pregnancy.</li>
+              <li>+0.5 Friendship From healing Zuki in the Necromancer's Cave.</li>
+              <li>+0.5 Friendship From witnessing Blue's motherly nature towards the party in the Necromancer's Cave.</li>
+              <li>+0.5 Friendship When they fell asleep together in Appleloosa.</li>
+              <li style="color:rgb(197, 28, 42)">+4.0 Romance When Blue made love to him under the effects of the love potion.</li>
+              <li>+2.0 Friendship When Blue divulged her traumas to him.</li>
+              <li style="color:rgb(197, 28, 42)">-1.5 Romance After the guilt of interfering with her and Graphite's relationship.</li>
+              <li>+0.2 Friendship For restraining his panic attack.</li>
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Blue.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr> <!-- Hypna -->
+        <td>
+            <h2>Hypna</h2>
+            <p>A headstrong mare with an affitnity for swords</p>
+            <h3 style="text-align:center">Friendship Level</h3>
+            <input class="slider" value="6" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
+            <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>+1.0 When she revived him in the Necromancer's Cave.</li>
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Hypna.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr> <!-- Infatua -->
+        <td>
+            <h2>Infatua</h2>
+            <p>This one is just a pervert.</p>
+            <h3 style="text-align:center">Friendship Level</h3>
+            <input class="slider" value="6" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
+            <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>-0.5 Friendship When she was harassing the batpony shopkeeper</li>
+              <li>+0.5 Friendship When she and Zuki bantered during the dragon fight</li>    
+              <li>+0.5 Friendship Because they banter a lot.</li>    
+              <li>+0.5 Friandship After her behavior change.</li>        
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Infa.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr> <!-- Coda Cantabile -->
+        <td>
+            <h2>Coda Canterbile</h2>
+            <p>A fellow native from south Equus with a beautiful singing voice.</p>
+            <h3 style="text-align:center">Friendship Level</h3>
+            <input class="slider" value="7.1" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
+            <input class="rslider" value="1" min="0" max="10" step=".1" name="romanceslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>+1.0 Friendship Upon learning that she was a stranger to Equestria like Zuki, and from the south as well!</li>
+              <li>+0.5 Friendship During the train ride when Zuki coached her in her exercise and gave her tea.</li>  
+              <li style="color:rgb(185, 57, 132)">+0.5 Friendship and +0.5 Romance After bonding over their unruly sisters in Vanhoover.</li>     
+              <li style="color:rgb(185, 57, 132)">+0.1 Friendship and +0.5 Romance After pretending to be a couple whilst undercover in the changeling restaurant.</li>    
+              <li style="color:rgb(185, 57, 132)">+0.1 Friendship and +0.5 Romance When Coda let Zuki live with her in Canterlot.</li>    
+              <li>+0.1 Friendship For showing concern over Zuki's bad day in the Necromancer's Cave.</li>            
+              <li style="color:rgb(185, 57, 132)">-0.2 Friendship and -0.5 Romance After the revelation that she knew the Necromancer's true motive and never sead anything.</li>               
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Coda.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr> <!-- Clinch Coffers -->
+        <td>
+            <h2>Clinch Coffers</h2>
+            <p>A very reasonable druid</p>
+            <h3 style="text-align:center">Friendship Level</h3>
+            <input class="slider" value="7" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
+            <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>+1.0 Friendship For saving Zephyrus' life.</li>
+              <li>+1.0 Friendship For saving Zuki's life.</li>
+            </ul>
+        </td>
+        <td>
+            <div class="portrait">
+              <img class="avatar" src="assets/characters/Clinch.png" />
+              <img class="frame" src="assets/characters/frame.png" />
+            </div>
+        </td>
+      </tr>
+      <tr> <!-- Warden Coinshine -->
+        <td>
+            <h2>Warden Coinshine</h2>
+            <p>A griffin who is very knowledgeable about dragons</p>
+            <input class="slider" value="5" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
+            <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
         </td>
         <td>
             <div class="portrait">
@@ -381,30 +390,28 @@
               <img class="frame" src="assets/characters/frame.png" />
             </div>
         </td>
-    </tr>
-    <tr> <!-- Amare Fidem -->
-      <td>
-          <h2>Amare Fidem</h2>
-          <p>The mysterious love doctor with a poetic tongue</p>
-          <input class="slider" value="6" min="0" max="10" step=".1" name="rangeslider" type="range" disabled/>
-          <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
-          <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range" disabled/>
-          <h3>Relationship Timeline:</h3>
-          <ul style="text-align:left ;">
-            <li>+0.5 Friendship From learning Amare was also a doctor like Zuki and sharing their faith.</li>
-            <li>+0.5 Friendship For healing Zuki during the Necromancer fight.</li>
-          </ul>
-        </td>
+      </tr>
+      <tr> <!-- Amare Fidem -->
         <td>
-            <div class="portrait">
-              <img class="avatar" src="assets/characters/Amare.png" />
-              <img class="frame" src="assets/characters/frame.png" />
-            </div>
-        </td>
-        <ul style="text-align:left ;"></ul>
-    </tr>
+            <h2>Amare Fidem</h2>
+            <p>The mysterious love doctor with a poetic tongue</p>
+            <input class="slider" value="6" min="0" max="10" step=".1" name="rangeslider" type="range"/>
+            <h3 style="text-align:center;color:rgb(197, 28, 42)">Romance Level</h3>
+            <input class="rslider" value="0" min="0" max="10" step=".1" name="romanceslider" type="range"/>
+            <h3>Relationship Timeline:</h3>
+            <ul style="text-align:left ;">
+              <li>+0.5 Friendship From learning Amare was also a doctor like Zuki and sharing their faith.</li>
+              <li>+0.5 Friendship For healing Zuki during the Necromancer fight.</li>
+            </ul>
+          </td>
+          <td>
+              <div class="portrait">
+                <img class="avatar" src="assets/characters/Amare.png" />
+                <img class="frame" src="assets/characters/frame.png" />
+              </div>
+          </td>
+      </tr>
     </table>
-
 
 
 
