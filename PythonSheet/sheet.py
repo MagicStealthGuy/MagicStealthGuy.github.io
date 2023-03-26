@@ -1,7 +1,22 @@
-from tkinter import *
+import tkinter as tk
+# from tkinter import *
 
-window = Tk()
+sheet = tk.Tk()
 
-window.title("Welcome to LikeGeeks app")
+sheet.geometry("800x500")
+sheet.title("Character Sheet")
 
-window.mainloop()
+label = tk.Label(sheet, text="Hello World", font=('Arial', 18))
+label.pack(padx=20,pady=20)
+
+textbox = tk.Text(sheet, height=3, font=('Arial', 16))
+textbox.pack(padx=20,pady=10)
+
+button = tk.Button(sheet, text="Click", font=('Arial', 18))
+button.pack(padx=10,pady=10)
+
+myentry = tk.Entry(sheet)
+myentry.pack()
+
+sheet.mainloop()
+
